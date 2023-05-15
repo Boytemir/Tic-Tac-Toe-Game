@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    position: relative;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    position: relative;
+}
+
+.box-item {
+    width: 100px;
+    height: 100px;
+    background-color: #73b9c5;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    font-size: 65px;
+}
+
+.box-item.hoverActive {
+    background-color: #3b4350;
+    color: #686a76;
+}
+
+.box-item.activeX {
+    background-color: #e77459;
+}
+
+.box-item.activeO {
+    background-color: #f6ad4e;
+}
+
+.restart{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    gap: 20px;
+    background: rgba(225, 225, 225, 0.6);
+}
+
+.restart.active {
+    display: flex;
+}
+
+.achiev {
+    font-size: 30px;
+    color: #3b4350;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+#restartBtn {
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #3b4350;
+    font-size: 14px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+p {
+    color: #9f9f9f;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
